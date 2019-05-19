@@ -1,4 +1,5 @@
 import ItunesService from "./itunes-service.js";
+import Song from "../../models/Song.js";
 //Private
 const itunesService = new ItunesService()
 
@@ -14,6 +15,9 @@ function drawSongs() {
 class ItunesController {
   constructor() {
     //BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
+    console.log('Hello from ItunesController');
+    drawSongs()
+    itunesService.addSubscriber('Song', Song)
   }
 
 
