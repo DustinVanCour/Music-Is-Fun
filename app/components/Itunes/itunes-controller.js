@@ -10,7 +10,9 @@ function drawSongs() {
   let songs = itunesService.Songs
   let template = ''
   songs.forEach(element => {
+    template += element.Template
   });
+  document.getElementById('song-list').innerHTML = template
 }
 
 
@@ -18,6 +20,7 @@ function drawSongs() {
 class ItunesController {
   constructor() {
     //BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
+    itunesService.addSubscriber('songs', drawSongs)
   }
 
 

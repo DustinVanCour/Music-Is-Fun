@@ -9,16 +9,14 @@ export default class Song {
         this.preview = song.previewUrl
     }
     get Template() {
-        {
-            return `
-        <div class="col" >
+        return `
+            <div class="col" >
                 <p>Title: ${this.title}</p>
-                <div>${this.albumArt}</div>
+                <div><img src="${this.albumArt}"></div>
                 <p>Artist: ${this.artist} </p>
-                <p>Time: ${this.collection}</p>
+                <p>Collection: ${this.collection}</p>
                 <p>Price: ${this.price}</p>
                 <p>Preview: ${this.preview}</p>
-            </div>
-        }
+            </div>`
     }
 }
