@@ -19,18 +19,6 @@ export default class Song {
                 <p>Price: ${this.price}</p>
                 <p>Preview: ${this.preview}</p>
             </div>
-        `
         }
-        return `
-        <div class="col" >
-                <p>Title: ${this.title}</p>
-                <div>${this.albumArt}</div>
-                <p>Artist: ${this.artist} </p>
-                <p>Time: ${this.collection}</p>
-                <p>Price: ${this.price}</p>
-                <p>Preview: ${this.preview}</p>
-            </div>
-        `
-
     }
 }
