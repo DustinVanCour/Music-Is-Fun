@@ -10,13 +10,12 @@ export default class Song {
     }
     get Template() {
         return `
-            <div class="col" >
-                <p>Title: ${this.title}</p>
-                <div><img src="${this.albumArt}"></div>
-                <p>Artist: ${this.artist} </p>
-                <p>Collection: ${this.collection}</p>
-                <p>Price: ${this.price}</p>
-                <p>Preview: ${this.preview}</p>
-            </div>`
+                <li>Title: ${this.title}</li>
+                <li><img src="${this.albumArt}"></li>
+                <li>Artist: ${this.artist} </li>
+                <li>Collection: ${this.collection}</li>
+                <li>Price: ${this.price}</li>
+                <li>Preview: ${this.preview}</li>
+                `
     }
 }
