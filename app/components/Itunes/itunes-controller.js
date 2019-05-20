@@ -5,7 +5,8 @@ const itunesService = new ItunesService()
 
 function drawSongs() {
   //changes button back to GET MUSIC once songs are loaded
-  document.querySelector('#get-music-button').textContent = 'GET MUSIC'
+  document.querySelector('#get-music-button').innerHTML = `<i class="fas fa-headphones"></i> Get Music`
+  document.querySelector('#scroll-down').innerHTML = `<img src="assets/scroll.gif" height="300" width="400">`
   console.log(itunesService.Songs)
   let songs = itunesService.Songs
   let template = ''

@@ -19,23 +19,35 @@
     <div class="section">
         <div class="container-fluid" id="top">
             <div class="row">
-                <div class="col">
-                    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="artist" placeholder="Artist/Band Name" />
-                            <button type="submit" class="btn btn-primary" id="get-music-button"><i
-                                    class="fas fa-headphones"></i> Get Music</button>
+                <div class="col h100">
+                    <div class="row h-50">
+                        <div class="col h-100 d-flex justify-content-center align-items-end">
+                            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="artist"
+                                        placeholder="Artist/Band Name" />
+                                    <button type="submit" class="btn btn-primary" id="get-music-button"><i
+                                            class="fas fa-headphones"></i> Get Music</button>
+                                    <br>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
+                    <div class="row h-50">
+                        <div class="col h-100 d-flex justify-content-center align-items-center">
+                            <div id="scroll-down"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row" id="song-list">
-            <!-- SONG LIST -->
+    <div class="section" id="list-background">
+        <div class="container">
+            <div class="row" id="song-list">
+                <!-- SONG LIST -->
+            </div>
         </div>
     </div>
 

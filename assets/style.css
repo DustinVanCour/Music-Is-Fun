@@ -1,6 +1,16 @@
-#song-list ul{
+#song-list{
   font-family: 'Stylish', sans-serif;
 }
+
+.h100 {
+  height: 100vh;
+}
+
+.card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 audio {
   width: 100%;
 }
@@ -15,6 +25,13 @@ audio {
   align-items: center;
 }
 
+#scroll-down {
+  align-items: flex-end;
+}
+#list-background {
+  background-image: linear-gradient(#be628d, white)
+}
+
 #top input {
   height: 50px;
   font-family: 'Stylish', sans-serif;
@@ -26,3 +43,4 @@ audio {
   font-size: 25px;
   font-family: 'Stylish', sans-serif;
 }
+
