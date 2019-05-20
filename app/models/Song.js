@@ -10,12 +10,23 @@ export default class Song {
     }
     get Template() {
         return `
-                <li>Title: ${this.title}</li>
-                <li><img src="${this.albumArt}"></li>
-                <li>Artist: ${this.artist} </li>
-                <li>Collection: ${this.collection}</li>
-                <li>Price: ${this.price}</li>
-                <li>Preview: ${this.preview}</li>
+<div class="col-4">
+<div class="card-deck">
+    <div class="card">
+        <img src="${this.albumArt}" class="card-img-top">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Title:</strong> ${this.title}</li>
+        <li class="list-group-item"><strong>Artist:</strong> ${this.artist} </li>
+        <li class="list-group-item"><strong>Album:</strong> ${this.collection}</li>
+        <li class="list-group-item"><strong>Price:</strong> ${this.price}</li>
+    </ul>
+        <div class="card-body">
+        <p><strong>Preview:</strong></p><audio controls><source src="${this.preview}" type="audio/mpeg"></audio></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
                 `
     }
 }

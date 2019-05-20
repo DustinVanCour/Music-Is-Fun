@@ -1,0 +1,28 @@
+#song-list ul{
+  font-family: 'Stylish', sans-serif;
+}
+audio {
+  width: 100%;
+}
+
+#top {
+  height: 100vh;
+  background-image: url('/assets/background2.gif');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top input {
+  height: 50px;
+  font-family: 'Stylish', sans-serif;
+  font-size: 35px;
+}
+
+#top button {
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Stylish', sans-serif;
+}
